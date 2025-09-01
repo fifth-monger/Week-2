@@ -67,8 +67,7 @@
     </section>
     <script>
       function askForCountry() {
-        let country = prompt("What country are you from?");
-        country = country.toLowerCase();
+        let country = prompt("What country are you from?").toLowerCase().trim();
         if (country === "brazil" || country === "portugal") {
           alert("You speak Portuguese!");
         } else {
